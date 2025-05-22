@@ -2,59 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thank You – Global Grocery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    /* Apply Inter font globally */
     body {
-      font-family: Arial, sans-serif;
-      background-color: #ecfdf5;
-      color: #065f46;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-    .thank-you-box {
-      text-align: center;
-      background: white;
-      padding: 2rem;
-      border-radius: 1rem;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-      max-width: 600px;
-      width: 90%;
-    }
-    .thank-you-box img {
-      width: 100px;
-      margin-bottom: 1rem;
-    }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      font-size: 1.1rem;
-    }
-    a.button {
-      display: inline-block;
-      margin-top: 1.5rem;
-      padding: 0.75rem 1.5rem;
-      background-color: #10b981;
-      color: white;
-      text-decoration: none;
-      border-radius: 0.5rem;
-      font-weight: bold;
-    }
-    a.button:hover {
-      background-color: #059669;
+      font-family: 'Inter', sans-serif;
     }
   </style>
 </head>
-<body>
-  <div class="thank-you-box">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Africa_map_yellow.png" alt="Logo">
-    <h1>Thank You!</h1>
-    <p>Your submission has been received. A member of the Global Grocery team will contact you shortly.</p>
-    <a class="button" href="index.html">Back to Form</a>
+<body class="bg-emerald-50 text-emerald-900 flex items-center justify-center min-h-screen p-4">
+  <div class="thank-you-box bg-white p-8 rounded-xl shadow-xl max-w-md w-full text-center">
+    <svg class="w-24 h-24 text-emerald-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+    </svg>
+    <h1 class="text-4xl font-bold mb-2">Thank You!</h1>
+    <p class="text-lg text-gray-700 mb-6">Your submission has been received. A member of the Sunshine team will contact you shortly.</p>
+    <a class="button inline-block mt-6 px-6 py-3 bg-emerald-600 text-white font-semibold rounded-lg shadow-md hover:bg-emerald-700 transition duration-300" href="index.html">
+      Back to Form
+    </a>
   </div>
 </body>
 </html>
